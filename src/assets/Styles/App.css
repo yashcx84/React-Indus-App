@@ -1,0 +1,203 @@
+.myContainer {
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 400px;
+    background-color: #9e9e9e36;
+    padding: 24px 28px;
+    border-radius: 24px;
+    box-shadow: 0 44px 44px rgba(0, 0, 0, 0.205);
+}
+
+.contact-side {
+    background: rgba(0, 0, 0, 0.062);
+}
+
+.contact .row {
+    margin-left: 0 !important;
+}
+
+.formContainer a {
+    font-family: var(--font-space);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: var(--color-secondary) !important;
+}
+
+header nav {
+    justify-content: space-between;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+header nav h1 {
+    font-size: 2em;
+    letter-spacing: -2px;
+    opacity: 0.55;
+    font-weight: bolder;
+}
+
+header nav .navLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+header .navLinks a {
+    padding: 12px 16px;
+}
+
+body .signup h1 {
+    font-size: 3.4em;
+}
+
+body .spec h1 {
+    font-size: 3.4em;
+}
+
+body .boards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .navRoutes a {
+    padding: 12px 16px;
+    color: var(--color-primary);
+}
+
+body .active {
+    background-color: var(--color-tertary);
+    color: var(--color-secondary) !important;
+}
+
+.connect-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+}
+
+.connect-icons .icon {
+    font-size: 4.2em;
+    cursor: pointer;
+    border-radius: 999px;
+    padding: 24px;
+    background-color: #0000001f;
+}
+
+.contact input {
+    background-color: rgba(0, 0, 0, 0.301);
+    border: none;
+    border-bottom: 1px solid var(--color-secondary) !important;
+    border-radius: 0 !important;
+    color: var(--color-secondary);
+}
+
+.contact input::placeholder {
+    color: var(--color-secondary) !important;
+}
+
+.contact input:focus {
+    box-shadow: none;
+    border-bottom: 1px solid var(--color-tertary) !important;
+    background-color: inherit !important;
+    color: inherit !important;
+}
+
+.icon:hover {
+    border: 1px solid var(--color-primary);
+}
+
+.location p:first-child {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.location button {
+    border: 1px solid var(--color-tertary) !important;
+    border-radius: 9999px;
+    background-color: transparent !important;
+}
+
+.location .location-icon {
+    color: var(--color-tertary);
+}
+
+.location a {
+    color: var(--color-tertary);
+}
+
+.contact .formContainer {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.carouselContainer {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    margin-block: 16px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselContainer button {
+    display: none;
+}
+
+.carouselContainer .carouselItem {
+    width: 100%;
+    background-position: center;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.5)),
+        url('../Images/home-banner3.jpg') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 84px;
+}
+
+.profile-card {
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+
+@media (max-width:768px) {
+    .contact .formContainer {
+        flex-shrink: 1;
+    }
+}

@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --font-head: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-btn-anchor: "Nunito Sans", sans-serif;
+  --font-subHead-para: 'Roboto', sans-serif;
+  --color-primary: #1b1b1b;
+  --color-secondary: #fff;
+  --color-tertary: hsl(0, 100%, 33%);
+  --color-fivth: #cccccc65;
+  --color-shadow: hsla(0, 95%, 36%, 0.705);
+  --color-border: #cccccc2a;
+  --color-forth: #adadad23;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-family: var(--font-head);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body a {
+  font-weight: 600;
+  text-decoration: none;
+  color: inherit;
+}
+
+body button:hover,
+body a:hover {
+  filter: brightness(0.85) !important;
+}
+
+body button {
+  border-radius: 0 !important;
+}
+
+body button,
+body a {
+  transition: all 0.1s ease-in;
+  font-family: var(--font-btn-anchor) !important;
+}
+
+body input {
+  padding: 16px 20px !important;
+  text-align: center;
+}
+
+body input::placeholder {
+  font-size: 0.85em;
+  font-family: var(--font-subHead-para);
+  letter-spacing: 1.4px;
+  text-align: center;
+  opacity: 0.45 !important;
+}
+
+body .myBtn {
+  padding: 20px 24px;
+  white-space: nowrap;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+body .shadowBtn {
+  box-shadow: 0 18px 44px var(--color-shadow);
+}
+
+.hoverBtn:hover {
+  filter: brightness(0.8);
+  box-shadow: none;
+}
+
+body .tertaryBtn {
+  background-color: var(--color-tertary);
+  color: var(--color-secondary);
+}
+
+body .forthBtn {
+  background-color: var(--color-fivth);
+  color: #1b1b1b;
+}
+
+body .primaryBtn {
+  background-color: var(--color-primary);
+}
+
+body .secondaryBtn {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+body h1 {
+  font-size: clamp(3em, 5vw, 5em);
+  font-family: var(--font-head);
+  line-height: 1.4;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+body h1 span {
+  color: var(--color-tertary);
+}
+
+body button {
+  padding: 12px 18px !important;
+}
+
+body p,
+body h2 {
+  width: 100%;
+  padding-inline: 0 !important;
+}
+
+body p {
+  font-family: var(--font-btn-anchor);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+body h2 {
+  font-family: var(--font-subHead-para);
+  font-weight: bold;
+  font-size: clamp(1.5em, 4vw, 2.5em);
+  text-transform: capitalize;
+}
+
+header,
+footer {
+  width: 100%;
+  position: fixed;
+  background-color: #00000004;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-space);
+  backdrop-filter: blur(8px);
+  font-weight: 800;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+
+footer p {
+  margin: auto;
+  text-align: center;
+  font-family: var(--font-btn-anchor);
+  opacity: 0.45;
+}
+
+body .logo {
+  width: 1.2em;
+}
+
+body .buttonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+body .buttonContainer .login-logo {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  font-weight: 800;
+  border: 1px solid var(--color-secondary);
+}
+
+body .buttonContainer .login-logo:hover {
+  border: 1px solid var(--color-tertary);
+  filter: brightness(1);
+}
+
+.profile-card {
+  margin-bottom: 12px;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.profile-card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.radius-md {
+  border-radius: 16px;
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+.profile-icon {
+  font-size: 5em;
+  padding: 12px;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
